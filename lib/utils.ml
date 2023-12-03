@@ -13,3 +13,5 @@ let rec list_sum list acc =
   match list with [] -> acc | head :: tail -> list_sum tail acc + head
 
 let explode s = List.init (String.length s) (String.get s)
+
+let cl2s cl = String.concat "" (List.map (String.make 1) cl)
